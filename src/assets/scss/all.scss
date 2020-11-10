@@ -5,7 +5,9 @@
 @import './config/typography';
 //fonts
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200;400;600&display=swap');
-//components layout
-@import './component/layout/_header';
-@import './component/layout/_Homebanner';
-@import './component/layout/_footer';
+//components 
+@import './component/_header';
+@import './component/_footer';
+//views
+@import './views/page/_Homebanner';
+@import './views/page/_explore';

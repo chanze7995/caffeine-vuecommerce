@@ -10,32 +10,32 @@ const routes = [
       {
         path: '/',
         name: 'HomeBanner',
-        component: () => import(/* webpackChunkName: "HomeBanner" */ '../views/navBar/HomeBanner.vue')
+        component: () => import(/* webpackChunkName: "HomeBanner" */ '../views/page/HomeBanner.vue')
       },
       {
         path: '/explore',
         name: 'Explore',
-        component: () => import(/* webpackChunkName: "Explore" */ '../views/navBar/Explore.vue')
+        component: () => import(/* webpackChunkName: "Explore" */ '../views/page/Explore.vue')
       },
       {
         path: '/shop',
         name: 'Shop',
-        component: () => import(/* webpackChunkName: "Shop" */ '../views/navBar/Shop.vue')
+        component: () => import(/* webpackChunkName: "Shop" */ '../views/page/Shop.vue')
       },
       {
         path: '/locations',
         name: 'Locations',
-        component: () => import(/* webpackChunkName: "Locations" */ '../views/navBar/Locations.vue')
+        component: () => import(/* webpackChunkName: "Locations" */ '../views/page/Locations.vue')
       },
       {
         path: '/course',
         name: 'Course',
-        component: () => import(/* webpackChunkName: "Course" */ '../views/navBar/Course.vue')
+        component: () => import(/* webpackChunkName: "Course" */ '../views/page/Course.vue')
       },
       {
         path: '/about',
         name: 'About',
-        component: () => import(/* webpackChunkName: "About" */ '../views/navBar/About.vue')
+        component: () => import(/* webpackChunkName: "About" */ '../views/page/About.vue')
       }
     ]
   }

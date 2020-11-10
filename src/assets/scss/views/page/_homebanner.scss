@@ -17,15 +17,6 @@
 	z-index: 1;
 	transition: 1s;
 }
-.homeBanner.open:before{
-
-	top: 0;
-	left: 0;
-	width: 50%;
-	height: 100%;
-  background: #B36A5E;
-	z-index: 3;
-}
 .homeBanner:after{
 	content: '';
 	position: absolute;
@@ -61,17 +52,37 @@
 	min-width: 300px;
 }
 @media (max-width: 414px){
+	.homeBanner{
+		position: static;
+	}
 	.homeBanner:before{
 		top: 0px;
 		left: 0;
 		width: 170px;
 		height: 310px;
 	}
+	.homeBanner.open:before{
+
+		top: 0;
+		left: 0;
+		width: 50%;
+		height: 100%;
+		background: #B36A5E;
+		z-index: 3;
+	}
 	.homeBanner:after{
 		bottom: 0;
 		right: 0;
 		width: 80px;
 		height: 100px;
+	}
+	.homeBanner.open:after{
+		bottom: 0;
+		right: 0;
+		width: 50%;
+		height: 100%;
+		background: #B36A5E;
+		z-index: 3;
 	}
 	.homeBanner__content{
 		flex-direction: column-reverse;

@@ -61,6 +61,7 @@
     display: inline-block;
     position: relative;
     width: 100px;
+    z-index: 6;
   }
   .mobileHeader__toggleMenuBtn{
     display: inline-block;
@@ -70,7 +71,7 @@
     // left: 0;
     width: 45px;
     height: 45px;
-    z-index: 10;
+    z-index: 6;
     cursor: pointer;
   }
   .headerNavbar{
@@ -82,8 +83,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    // background: #B36A5E;
-    z-index: 3;
+    z-index: 5;
     display: flex;
     justify-content: center;
     align-items: center;
