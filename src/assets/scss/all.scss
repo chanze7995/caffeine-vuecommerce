@@ -3,6 +3,11 @@
 @import './config/reset';
 @import './config/reboot';
 @import './config/typography';
+//Swiper styles
+@import 'swiper/swiper.scss';
+@import 'swiper/components/navigation/navigation.scss';
+@import 'swiper/components/pagination/pagination.scss';
+
 //fonts
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200;400;600&display=swap');
 //components 

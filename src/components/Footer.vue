@@ -1,5 +1,5 @@
 <template>
-  <footer>
+  <div>
     <div class="footerInfo">
       <ul>
         <li>Calling 01-2345-6789</li>
@@ -8,7 +8,7 @@
       </ul>
       <div class="copyright">ⓒ 2020 Created by Chanze Wu .<br>僅個人練習使用，不做任何商業用途</div>
     </div>
-  </footer>
+  </div>
 </template>
 <script>
 export default {

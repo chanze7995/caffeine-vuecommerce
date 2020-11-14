@@ -1,6 +1,21 @@
-.crsl-wrap{
-  background-color: #d7d7d7;
+.carousel {
+  background: #d7d7d7;
+  height: 80vh;
 }
-.crsl-wrap img{
-  width: 30%;
+
+.carousel_cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel_cell img{
+  margin: 2rem;
+  padding-top: 3rem;
+  width: 80%;
+  cursor: pointer;
+}
+.swiper-slide-active{
+  transform: scale(1.5);
+  transition: .4s
 }
