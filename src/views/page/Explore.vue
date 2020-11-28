@@ -8,31 +8,31 @@
           navigation
           :pagination="{ clickable: true }">
     <swiper-slide class="carousel_cell">
-      <img src="@/assets/img/coffeeBag/Caffiene_with_yellow.png" alt="">
+      <img src="@/assets/img/coffeeBean/caffeine_with_yellow.png" alt="">
     </swiper-slide>
     <swiper-slide class="carousel_cell">
-      <img src="@/assets/img/coffeeBag/Caffiene_with_blue.png" alt="">
+      <img src="@/assets/img/coffeeBean/caffeine_with_blue.png" alt="">
     </swiper-slide>
     <swiper-slide class="carousel_cell">
-      <img src="@/assets/img/coffeeBag/Caffiene_with_pink.png" alt="">
+      <img src="@/assets/img/coffeeBean/caffeine_with_pink.png" alt="">
     </swiper-slide>
     <swiper-slide class="carousel_cell">
-      <img src="@/assets/img/coffeeBag/Caffiene_with_green.png" alt="">
+      <img src="@/assets/img/coffeeBean/caffeine_with_green.png" alt="">
     </swiper-slide>
     <swiper-slide class="carousel_cell">
-      <img src="@/assets/img/coffeeBag/Caffiene_with_purple.png" alt="">
+      <img src="@/assets/img/coffeeBean/caffeine_with_purple.png" alt="">
     </swiper-slide>
     <swiper-slide class="carousel_cell">
-      <img src="@/assets/img/coffeeBag/Caffiene_with_orange.png" alt="">
+      <img src="@/assets/img/coffeeBean/caffeine_with_orange.png" alt="">
     </swiper-slide>
     <swiper-slide class="carousel_cell">
-      <img src="@/assets/img/coffeeBag/Caffiene_with_white.png" alt="">
+      <img src="@/assets/img/coffeeBean/caffeine_with_white.png" alt="">
     </swiper-slide>
     <swiper-slide class="carousel_cell">
-      <img src="@/assets/img/coffeeBag/Caffiene_with_red.png" alt="">
+      <img src="@/assets/img/coffeeBean/caffeine_with_red.png" alt="">
     </swiper-slide>
     <swiper-slide class="carousel_cell">
-      <img src="@/assets/img/coffeeBag/Caffiene_with_unknow.png" alt="">
+      <img src="@/assets/img/coffeeBean/caffeine_with_unknow.png" alt="">
     </swiper-slide>
   </swiper>
 </template>

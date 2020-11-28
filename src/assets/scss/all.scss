@@ -13,6 +13,9 @@
 //components 
 @import './component/_header';
 @import './component/_footer';
+@import './component/shop/_productExhibit';
+@import './component/shop/_productMenu';
 //views
-@import './views/page/_Homebanner';
+@import './views/page/_HomeBanner';
 @import './views/page/_explore';
+@import './views/page/_shop';
