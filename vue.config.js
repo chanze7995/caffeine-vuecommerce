@@ -6,10 +6,13 @@ function resolve (dir) {
 
 module.exports = {
   chainWebpack: config => {
-    config.module
-      .rules.delete('svg')
+    config.module // 修改svg預設處理,
+      .rule('svg')
+      .exclude
+      .add(resolve('src/assets/img/icons'))
+      .end()
 
-    config.module
+    config.module // 新增 svg-sprite-loader 設定
       .rule('svg-sprite-loader')
       .test(/\.svg$/)
       .include

@@ -3,9 +3,9 @@
 <svg id="magnifying-glass" xmlns:svgjs="http://svgjs.com/svgjs"
 	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100"
 	 style="enable-background:new 0 0 100 100;" xml:space="preserve">
-	<style type="text/css">
-		.st0{fill:#666;}
-	</style>
+	<!-- <style type="text/css">
+		.st0{fill:#ccc;}
+	</style> -->
 	<g>
 		<g>
 			<path class="st0" d="M97.8,86.9L77.2,66.3c5-7.2,7.5-15.2,7.5-24c0-5.7-1.1-11.2-3.3-16.4c-2.2-5.2-5.2-9.7-9-13.5

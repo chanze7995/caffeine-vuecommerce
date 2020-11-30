@@ -1,5 +1,5 @@
 <template>
-    <svg :width="width" :height="height" :style="{color: iconColor}">
+    <svg :class="svgClass" aria-hidden="true">
         <use xmlns:xlink="http://www.w3.org/1999/xlink" :xlink:href="iconId"></use>
     </svg>
 </template>
@@ -10,25 +10,34 @@ export default {
   props: {
     iconName: {
       type: String,
-      default: 'box'
+      required: true
     },
-    width: {
-      type: [Number, String],
-      default: 32
-    },
-    height: {
-      type: [Number, String],
-      default: 32
-    },
-    iconColor: {
+    iconClass: {
       type: String,
-      default: 'currentColor'
+      default: ''
     }
   },
   computed: {
     iconId () {
       return `#icon-${this.iconName}`
+    },
+    svgClass () {
+      if (this.iconClass) {
+        return this.iconClass
+      } else {
+        return 'svg-icon'
+      }
     }
+
   }
 }
 </script>
+
+<style scoped>
+.svg-icon {
+  width: 1.5em;
+  height: 1.5em;
+  fill: currentColor;
+  overflow: hidden;
+}
+</style>

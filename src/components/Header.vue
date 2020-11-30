@@ -37,8 +37,8 @@
 </template>
 <script>
 import { ref, computed } from 'vue'
-import menu from '@/assets/img/icons/menu.svg'
-import close from '@/assets/img/icons/close.svg'
+import menu from '@/assets/img/menu.svg'
+import close from '@/assets/img/close.svg'
 export default {
   setup (prop, { emit }) {
     const isOpen = ref(false)
