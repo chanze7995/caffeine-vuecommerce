@@ -1,6 +1,6 @@
 <template>
   <div class="productExhibit">
-    <div class="productBox">
+    <div class="productBox" >
       <div class="productBox__img">
         <div class="productBox__discountLabel">-20%</div>
         <a href="">
@@ -26,20 +26,36 @@
       </div>
       <div class="productBox__content">
         <div class="productName">
-          <a href="">AeroPress 愛樂壓 Coffee Maker</a>
+          <a href="">{{}}</a>
         </div>
         <div class="productPrice">定價：980元</div>
       </div>
     </div>
   </div>
+  <div>{{productInfo}}</div>
 </template>
 
 <script>
 import '@/assets/img/icons/cart.svg'
 import Icon from '@/components/svgSprites/Icon.vue'
+import { onMounted } from 'vue'
+import { useStore } from 'vuex'
 export default {
   components: {
     Icon
+  },
+  setup () {
+    const store = useStore()
+    const productInfoLoad = () => {
+      store.dispatch('getProductInfo')
+    }
+    // const productInfo = reactive(store.getters.productInfo)
+
+    onMounted(() => {
+      productInfoLoad()
+      // useProductInfo()
+    })
+    return {}
   }
 }
 </script>
