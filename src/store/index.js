@@ -7,17 +7,18 @@ export default createStore({
   actions: {
     getProductData ({ commit }) {
       axios.get('http://localhost:3000/product').then(res => {
-        commit('productDataInit', res.data)
+        commit('productInfoInit', res.data)
       })
     }
   },
   mutations: {
     productInfoInit (state, payload) {
       // state.productInfo = payload
-      // const filterProductData = payload.map(item => Object.values(item)[2]).flat(Infinity)
-      const filterProductData = [].concat(...payload.map(item => Object.values(item)[2]))
+      const filterProductData = payload.map(item => Object.values(item)[2]).flat(Infinity)
+      // const filterProductData = [].concat(...payload.map(item => Object.values(item)[2]))
       state.productInfo = filterProductData
-      console.log(filterProductData)
+      // console.log(filterProductData)
+      // console.log(state.productInfo)
     }
   },
   getters: {
