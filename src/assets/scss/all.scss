@@ -13,9 +13,14 @@
 //components 
 @import './component/_header';
 @import './component/_footer';
+@import './component/_button';
+@import './component/explore/_coffeeDescription';
 @import './component/shop/_productExhibit';
 @import './component/shop/_productMenu';
+@import './component/shop/_productLightbox';
 //views
 @import './views/page/_HomeBanner';
 @import './views/page/_explore';
 @import './views/page/_shop';
+@import './views/_login';
+

@@ -1,7 +1,8 @@
 <template>
   <div class="home">
-    <Header @menu-open="menuOpen" />
-    <router-view :isActive="isOpen"/>
+    <Header :isMobileMenuOpen="isMobileMenuOpen"
+            :showMobileMenu="showMobileMenu" />
+    <router-view :isMobileMenuOpen="isMobileMenuOpen"/>
     <Footer />
   </div>
 </template>
@@ -19,14 +20,14 @@ export default {
     Footer
   },
   setup () {
-    const isOpen = ref(false)
-    const menuOpen = (isActive) => {
-      isOpen.value = isActive
+    const isMobileMenuOpen = ref(false)
+    const showMobileMenu = () => {
+      isMobileMenuOpen.value = !isMobileMenuOpen.value
     }
 
     return {
-      menuOpen,
-      isOpen
+      isMobileMenuOpen,
+      showMobileMenu
     }
   }
 

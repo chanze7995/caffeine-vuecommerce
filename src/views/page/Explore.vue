@@ -8,33 +8,52 @@
           navigation
           :pagination="{ clickable: true }">
     <swiper-slide class="carousel_cell">
-      <img src="@/assets/img/coffeeBean/caffeine_with_yellow.png" alt="">
+      <router-link :to="'/explore/flavor'">
+        <img src="@/assets/img/coffeeBean/caffeinewithyellow.png" alt="">
+      </router-link>
     </swiper-slide>
     <swiper-slide class="carousel_cell">
-      <img src="@/assets/img/coffeeBean/caffeine_with_blue.png" alt="">
+      <router-link :to="'/explore/flavor'">
+        <img src="@/assets/img/coffeeBean/caffeinewithblue.png" alt="">
+      </router-link>
     </swiper-slide>
     <swiper-slide class="carousel_cell">
-      <img src="@/assets/img/coffeeBean/caffeine_with_pink.png" alt="">
+      <router-link :to="'/explore/flavor'">
+        <img src="@/assets/img/coffeeBean/caffeinewithpink.png" alt="">
+      </router-link>
     </swiper-slide>
     <swiper-slide class="carousel_cell">
-      <img src="@/assets/img/coffeeBean/caffeine_with_green.png" alt="">
+      <router-link :to="'/explore/flavor'">
+        <img src="@/assets/img/coffeeBean/caffeinewithgreen.png" alt="">
+      </router-link>
     </swiper-slide>
     <swiper-slide class="carousel_cell">
-      <img src="@/assets/img/coffeeBean/caffeine_with_purple.png" alt="">
+      <router-link :to="'/explore/flavor'">
+        <img src="@/assets/img/coffeeBean/caffeinewithpurple.png" alt="">
+      </router-link>
     </swiper-slide>
     <swiper-slide class="carousel_cell">
-      <img src="@/assets/img/coffeeBean/caffeine_with_orange.png" alt="">
+      <router-link :to="'/explore/flavor'">
+        <img src="@/assets/img/coffeeBean/caffeinewithorange.png" alt="">
+      </router-link>
     </swiper-slide>
     <swiper-slide class="carousel_cell">
-      <img src="@/assets/img/coffeeBean/caffeine_with_white.png" alt="">
+      <router-link :to="'/explore/flavor'">
+        <img src="@/assets/img/coffeeBean/caffeinewithwhite.png" alt="">
+      </router-link>
     </swiper-slide>
     <swiper-slide class="carousel_cell">
-      <img src="@/assets/img/coffeeBean/caffeine_with_red.png" alt="">
+      <router-link :to="'/explore/flavor'">
+        <img src="@/assets/img/coffeeBean/caffeinewithred.png" alt="">
+      </router-link>
     </swiper-slide>
     <swiper-slide class="carousel_cell">
-      <img src="@/assets/img/coffeeBean/caffeine_with_unknow.png" alt="">
+      <router-link :to="'/explore/flavor'">
+        <img src="@/assets/img/coffeeBean/caffeinewithunknown.png" alt="">
+      </router-link>
     </swiper-slide>
   </swiper>
+  <router-view />
 </template>
 
 <script>

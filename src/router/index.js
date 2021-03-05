@@ -16,11 +16,22 @@ const routes = [
         path: '/explore',
         name: 'Explore',
         component: () => import(/* webpackChunkName: "Explore" */ '../views/page/Explore.vue')
+
+      },
+      {
+        path: '/explore/flavor',
+        name: 'CoffeeIntroduction',
+        component: () => import(/* webpackChunkName: "CoffeeIntroduction" */ '../components/explore/CoffeeDescription.vue')
       },
       {
         path: '/shop',
         name: 'Shop',
         component: () => import(/* webpackChunkName: "Shop" */ '../views/page/Shop.vue')
+        // children: [
+        //   {
+
+        //   },
+        // ]
       },
       {
         path: '/locations',
@@ -32,10 +43,15 @@ const routes = [
         name: 'Course',
         component: () => import(/* webpackChunkName: "Course" */ '../views/page/Course.vue')
       },
+      // {
+      //   path: '/about',
+      //   name: 'About',
+      //   component: () => import(/* webpackChunkName: "About" */ '../views/page/About.vue')
+      // },
       {
         path: '/about',
         name: 'About',
-        component: () => import(/* webpackChunkName: "About" */ '../views/page/About.vue')
+        component: () => import(/* webpackChunkName: "About" */ '../views/Login.vue')
       }
     ]
   }

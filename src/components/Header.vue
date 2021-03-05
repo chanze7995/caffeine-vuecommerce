@@ -4,11 +4,11 @@
       <div class="mobileHeader__logoImg">
         <img src="@/assets/img/logoImg.svg" alt="logo">
       </div>
-      <div :class="['mobileHeader__toggleMenuBtn',{ open:isOpen }]" @click="showMenuHandler">
+      <div :class="['mobileHeader__toggleMenuBtn',{ open:props.isMobileMenuOpen }]" @click="showMobileMenu">
         <img :src="changeImgHandler" alt="">
       </div>
     </div>
-    <ul :class="['headerNavbar',{ open:isOpen }]">
+    <ul :class="['headerNavbar',{ open:props.isMobileMenuOpen }]">
       <li class="headerNavbar__item">
         <router-link to="/">首頁</router-link>
       </li>
@@ -18,7 +18,7 @@
       <li class="headerNavbar__item">
         <router-link to="/shop">線上購物</router-link>
       </li>
-      <li :class="['logoImg',{close:isOpen}]">
+      <li :class="['logoImg',{close:props.isMobileMenuOpen}]">
         <router-link to="/">
           <img src="@/assets/img/logoImg.svg" alt="logo">
         </router-link>
@@ -36,24 +36,26 @@
   </header>
 </template>
 <script>
-import { ref, computed } from 'vue'
+import { computed } from 'vue'
 import menu from '@/assets/img/menu.svg'
 import close from '@/assets/img/close.svg'
 export default {
-  setup (prop, { emit }) {
-    const isOpen = ref(false)
-    const changeImgHandler = computed(() => {
-      return (isOpen.value) ? close : menu
-    })
-    const showMenuHandler = () => {
-      isOpen.value = !isOpen.value
-      emit(
-        'menu-open', isOpen.value
-      )
+  props: {
+    isMobileMenuOpen: {
+      type: Boolean,
+      deault: false
+    },
+    showMobileMenu: {
+      type: Function,
+      default: () => {}
     }
+  },
+  setup (props) {
+    const changeImgHandler = computed(() => {
+      return (props.isMobileMenuOpen) ? close : menu
+    })
     return {
-      isOpen,
-      showMenuHandler,
+      props,
       changeImgHandler,
       menu,
       close

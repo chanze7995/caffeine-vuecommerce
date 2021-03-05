@@ -1,5 +1,5 @@
 <template>
-  <banner :class="['homeBanner',{open:isActive}]">
+  <banner :class="['homeBanner',{open:isMobileMenuOpen}]">
     <div class="homeBanner__content">
       <div class="homeBanner__content__textBox">
         <h1>咖啡與你的故事</h1>
@@ -14,7 +14,17 @@
 <script>
 export default {
   name: 'Homebanner',
-  props: ['isActive']
+  props: {
+    isMobileMenuOpen: {
+      type: Boolean,
+      deault: false
+    }
+  },
+  setup (props) {
+    return {
+      props
+    }
+  }
 }
 
 </script>

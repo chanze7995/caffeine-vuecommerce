@@ -58,7 +58,7 @@
   position: absolute;
   height: 350px;
   left: 50%;
-  transform: translateX(-40%);
+  transform: translateX(-50%);
 }
 .productBox__option{
   position: absolute;
@@ -87,17 +87,18 @@
   transition-delay: 0.2s;
 }
 .productBox__option__icon{
-  width: 1.8em;
-  height: 1.8em;
+  width: 1.8rem;
+  height: 1.8rem;
   fill:#fff;
   transition: all .3s;
+  cursor: pointer;
 }
 .productBox__option__icon:hover{
   fill:$darkred;
   transition: all .3s;
 
 }
-.productBox__option li a::before{
+.productBox__option li div::before{
   content: '';
   display: none;
   position: absolute;
@@ -109,7 +110,7 @@
   top: 12%;
   left: 1.75rem;
 }
-.productBox__option li a::after{
+.productBox__option li div::after{
   content: attr(data-tip);
   display: none;
   position: absolute;
@@ -123,29 +124,29 @@
   white-space: nowrap;
   color: #333;
 }
-.productBox__option li a:hover::before,
-.productBox__option li a:hover::after{
+.productBox__option li div:hover::before,
+.productBox__option li div:hover::after{
   display: block;
 }
 .productBox__content{
   padding: 1rem 0 0 0;
 }
-.productName{
+.productBox__content__Name{
   font-size: 1rem;
   font-weight: 500;
   
 }
-.productPrice{
+.productBox__content__Price{
   display: flex;
 }
-.productPrice__original{
+.productBox__content__Price__original{
   padding-right: 0.5rem;
 }
-.productPrice--discount{
+.productBox__content__Price--discount{
   text-decoration: line-through;
   text-decoration-color: $darkred;
 }
-.productPrice__discount{
+.productBox__content__Price__discount{
   padding-left: 0.5rem;
   color: $darkred;
 }
