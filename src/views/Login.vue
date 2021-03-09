@@ -3,7 +3,7 @@
       <div class="formsContainer">
         <div class="signin-signup">
           <form action="#" class="signInForm">
-            <h2 class="formTitle">登入</h2>
+            <h2 class="formTitle">會員登入</h2>
             <div class="formInputField">
               <Icon icon-name="user" icon-class="formInputField__icon" />
               <input type="text" placeholder="使用者" />
@@ -30,7 +30,7 @@
             </div>
           </form>
           <form action="#" class="signUpForm">
-            <h2 class="formTitle">註冊</h2>
+            <h2 class="formTitle">註冊會員</h2>
             <div class="formInputField">
               <Icon icon-name="user" icon-class="formInputField__icon" />
               <input type="text" placeholder="使用者" />

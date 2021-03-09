@@ -1,0 +1,55 @@
+.loadingContainer{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cupGroup{  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cup {
+  position: relative;
+  width: 8.5rem;
+  height: 7.5rem;
+  border: 5px solid #333;
+  border-radius: 15% 15% 35% 35%;
+  overflow: hidden;
+}
+.cupHandle{
+  width: 1.8rem;
+  height: 2.5rem;
+  border: 5px solid #333;
+  border-left: none;
+  border-radius: 0 20% 60% 0%;
+
+}
+.coffee{
+  width: 100%;
+  height: 100%;
+  background: #C99B6B;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.coffee::after {
+  content: "";
+  position: absolute;
+  bottom: -100%;
+  width: 25rem;
+  height: 25rem;
+  background-color: #fff;
+  border-radius: 40% ;
+  animation: spin 6s ease-out infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+  100% {
+    transform: translateY(-50%) rotate(720deg);
+  }
+}
