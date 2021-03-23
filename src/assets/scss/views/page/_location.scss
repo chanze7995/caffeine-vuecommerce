@@ -1,0 +1,83 @@
+.storeBannerSection{
+  width: 100%;
+  height: 70vh;
+  outline: 1px solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.storeBannerSection__video{
+  width: 200%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.9;
+  overflow: hidden;
+
+}
+.storeBannerSection__content{
+  position: absolute;
+  left: 10%;
+  padding: 2rem;
+  // z-index: 1
+}
+.storeBannerSection__content__title{
+  padding-bottom: 1rem;
+  color: #fff;
+  font-weight: 600;
+  font-size: 2rem;
+}
+.storeBannerSection__content__text{
+  color: #fff;
+  font-size: 1rem;
+}
+
+.storeLocationSection{
+  padding: 3rem;
+}
+.storeLocationContainer{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+  padding: 2rem;
+  grid-gap: 40px;
+}
+.storeLocationCard{
+  background-color: #1c1b29;
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(0,0,0,0.18);
+}
+.storeLocationCard__background{
+  position: relative;
+  clip-path: polygon(0 0,100% 0, 100% 85%, 0 100%);
+}
+.storeLocationCard__background__pic{
+  width: 100%;
+  display: block;
+  border-radius: 20px 20px 0 0;
+  opacity: 0.7;
+
+}
+.storeLocationCard__background:after{
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 20px 20px 0 0;
+  opacity: 0.7;
+}
+.storeInfoContent{
+  padding: 3rem; 
+}
+.storeInfoContent>h3{
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin: 10px 0 15px 0;
+}
+.storeInfoContent>p{
+  color: #a0a0a0;
+  font-size: 1rem;
+  line-height: 2rem;
+  font-weight: 400;
+}

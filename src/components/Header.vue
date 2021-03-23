@@ -30,7 +30,7 @@
         <router-link to="/course">咖啡課程</router-link>
       </li>
       <li class="headerNavbar__item">
-        <router-link to="/about">資訊</router-link>
+        <router-link to="/account">會員</router-link>
       </li>
     </ul>
   </header>

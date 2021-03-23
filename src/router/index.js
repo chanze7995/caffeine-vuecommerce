@@ -38,19 +38,19 @@ const routes = [
         name: 'Locations',
         component: () => import(/* webpackChunkName: "Locations" */ '../views/page/Locations.vue')
       },
-      {
-        path: '/course',
-        name: 'Course',
-        component: () => import(/* webpackChunkName: "Course" */ '../views/page/Course.vue')
-      },
+      // {
+      //   path: '/course',
+      //   name: 'Course',
+      //   component: () => import(/* webpackChunkName: "Course" */ '../views/page/Course.vue')
+      // },
       // {
       //   path: '/about',
       //   name: 'About',
       //   component: () => import(/* webpackChunkName: "About" */ '../views/page/About.vue')
       // },
       {
-        path: '/about',
-        name: 'About',
+        path: '/course',
+        name: 'Course',
         component: () => import(/* webpackChunkName: "About" */ '../views/Loading.vue')
       }
     ]
