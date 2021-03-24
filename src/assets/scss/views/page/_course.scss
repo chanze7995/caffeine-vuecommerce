@@ -1,0 +1,61 @@
+.courseBannerSection{
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+
+}
+.courseBannerSection__background{
+  width: 100%;
+  object-fit: cover;
+  opacity: 0.9;
+}
+.courseBannerSection__content{
+  position: absolute;
+  left: 10%;
+  padding: 2rem;
+  // z-index: 1
+}
+.courseBannerSection__content__title{
+  padding-bottom: 1rem;
+  color: #fff;
+  font-weight: 600;
+  font-size: 2rem;
+}
+.courseBannerSection__content__text{
+  color: #fff;
+  font-size: 1rem;
+}
+.courseInfoSectionContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+}
+.courseInfoContent{
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: center;
+  // align-items: center;
+  padding: 2rem;
+}
+.courseInfoContent__title{
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
+}
+.courseCurrentActivitySection{
+  background-color: #fff5e2;
+}
+.courseCurrentActivityContainer{
+  padding: 3rem;
+}
+.courseCurrentActivityContent{
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+.courseCurrentActivityContent__title{
+  font-size: 2rem;
+}

@@ -1,12 +1,21 @@
-.footerInfo{
-    display: flex; 
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 1.5rem;
-    // height: 100px;
-  }
-
+.footerInfoContainer{
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+.footerInfoContent{
+  padding: 3rem;
+}
+.footerInfoContent__title{
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
+}
+.footerInfoContent__text{
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
 .copyright{
-  padding: 1.5rem 0 0 0;
+  padding: 1.5rem;
+  line-height: 1.5rem;
 }

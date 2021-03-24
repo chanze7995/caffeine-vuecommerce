@@ -8,7 +8,7 @@
   </section>
   <section class="storeLocationSection">
     <div class="storeLocationContainer">
-      <div class="storeLocationCard card1">
+      <div class="storeLocationCard">
           <div class="storeLocationCard__background">
               <img src="@/assets/img/cafe/cafe0.jpg" alt="十字街市場" class="storeLocationCard__background__pic">
           </div>
@@ -17,7 +17,7 @@
               <p>我們的十字街市場咖啡館附近是歷史悠久的公共市場之一，在自然光線下沐浴，使之遠離都市生活的喧囂。品嚐我們的一種季節性招牌飲品放鬆身心，或拜訪市場內的鄰居前在此休息。</p>
           </div>
       </div>
-      <div class="storeLocationCard card2">
+      <div class="storeLocationCard">
           <div class="storeLocationCard__background">
               <img src="@/assets/img/cafe/cafe1.jpg" alt="海港角" class="storeLocationCard__background__pic">
           </div>
@@ -26,7 +26,7 @@
               <p>海港角提供風景的咖啡。這間咖啡廳的落地窗可俯瞰海港和標誌性的建築，既時尚又誘人。除了我們的招牌咖啡和咖啡館菜單之外，我們還增加了生啤酒，葡萄酒和小批量雞尾酒。因此，您幾乎永遠都不必離開。</p>
           </div>
       </div>
-      <div class="storeLocationCard card3">
+      <div class="storeLocationCard">
           <div class="storeLocationCard__background">
               <img src="@/assets/img/cafe/cafe2.jpg" alt="貝塞斯達新月" class="storeLocationCard__background__pic">
           </div>
