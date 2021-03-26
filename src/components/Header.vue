@@ -40,6 +40,7 @@ import { computed } from 'vue'
 import menu from '@/assets/img/menu.svg'
 import close from '@/assets/img/close.svg'
 export default {
+  name: 'Header',
   props: {
     isMobileMenuOpen: {
       type: Boolean,

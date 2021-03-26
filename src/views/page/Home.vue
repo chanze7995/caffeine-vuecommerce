@@ -13,7 +13,7 @@
 </template>
 <script>
 export default {
-  name: 'Homebanner',
+  name: 'Home',
   props: {
     isMobileMenuOpen: {
       type: Boolean,
