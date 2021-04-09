@@ -1,22 +1,44 @@
 <template>
   <div class="productMenu">
-    <ul class="mainMenuBox">
-      <li class="mainMenuBox__title">全部商品</li>
-      <li class="mainMenuBox__title">咖啡豆
-        <ul class="subMenuBox">
-          <li class="subMenuBox__title">精品單一莊園</li>
-          <li class="subMenuBox__title">混合</li>
-          <li class="subMenuBox__title">淺烘培</li>
-          <li class="subMenuBox__title">中烘培</li>
-          <li class="subMenuBox__title">深烘培</li>
-          <li class="subMenuBox__title">訂閱咖啡</li>
+    <ul class="mainMenuContainer">
+      <li>
+        <router-link :to="{name:'Shop'}" @click="pathChangeClick('all')">全部商品</router-link>
+      </li>
+      <li>
+        <router-link :to="{name:'Shop'}" @click="pathChangeClick('bean')">咖啡豆</router-link>
+        <ul class="subMenuContainer">
+          <li>
+            <router-link :to="{name:'Shop'}" @click="pathChangeClick('single')">精品單一莊園</router-link>
+          </li>
+          <li>
+            <router-link :to="{name:'Shop'}" @click="pathChangeClick('mix')">混合</router-link>
+          </li>
+          <li>
+            <router-link :to="{name:'Shop'}" @click="pathChangeClick('light')">淺烘培</router-link>
+          </li>
+          <li>
+            <router-link :to="{name:'Shop'}" @click="pathChangeClick('medium')">中烘培</router-link>
+          </li>
+          <li>
+            <router-link :to="{name:'Shop'}" @click="pathChangeClick('dark')">深烘培</router-link>
+          </li>
+          <li>
+            <router-link :to="{name:'Shop'}" @click="pathChangeClick('subscription')">訂閱咖啡</router-link>
+          </li>
         </ul>
       </li>
-      <li class="mainMenuBox__title">咖啡生活
-        <ul class="subMenuBox">
-          <li class="subMenuBox__title">沖煮設備</li>
-          <li class="subMenuBox__title">濾杯</li>
-          <li class="subMenuBox__title">濾材</li>
+      <li>
+        <router-link :to="{name:'Shop'}" @click="pathChangeClick('all')">咖啡生活</router-link>
+        <ul class="subMenuContainer">
+          <li>
+            <router-link :to="{name:'Shop'}" @click="pathChangeClick('subscription')">沖煮設備</router-link>
+          </li>
+          <li>
+            <router-link :to="{name:'Shop'}" @click="pathChangeClick('subscription')">濾杯</router-link>
+          </li>
+          <li>
+            <router-link :to="{name:'Shop'}" @click="pathChangeClick('subscription')">濾材</router-link>
+          </li>
         </ul>
       </li>
     </ul>

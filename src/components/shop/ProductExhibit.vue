@@ -47,7 +47,6 @@
 import '@/assets/img/icons/cart.svg'
 import Icon from '@/components/svgSprites/Icon.vue'
 import { ref } from 'vue'
-
 export default {
   components: {
     Icon
@@ -82,5 +81,4 @@ export default {
 </script>
 
 <style>
-
 </style>

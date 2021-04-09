@@ -1,4 +1,4 @@
-.homeBanner{
+.homeBannerSection{
 	position: relative;
 	width: 100%;
 	min-height: calc(100vh - 100px);
@@ -6,7 +6,7 @@
 	align-items: center;
 	// background: linear-gradient(#fff,#404040);
 }
-.homeBanner:before{
+.homeBannerSection:before{
 	content: '';
 	position: absolute;
 	top: 0;
@@ -17,7 +17,7 @@
 	z-index: 1;
 	transition: 1s;
 }
-.homeBanner:after{
+.homeBannerSection:after{
 	content: '';
 	position: absolute;
 	bottom: 0;
@@ -28,7 +28,7 @@
 	z-index: 1;
 	transition: 1s;
 }
-.homeBanner__content{
+.homeBannerSection__content{
 	position: relative;
 	width: 100%;
 	display: flex;
@@ -36,32 +36,32 @@
 	align-items: center;
 	z-index: 2;
 }
-.homeBanner__content__textBox h1{
+.homeBannerSection__content__textBox h1{
 	color: #404040;
 	padding-left: 2rem;
 	padding:3rem;
 	font-size: $font-3xl;
 }
-.homeBanner__content__textBox p{
+.homeBannerSection__content__textBox p{
 	color: #404040;
 	padding-left: 2rem;
 	padding: 0 3rem;
 }
-.homeBanner__content__img{
+.homeBannerSection__content__img{
 	width: 50%;
 	min-width: 300px;
 }
 @media (max-width: 414px){
-	.homeBanner{
+	.homeBannerSection{
 		position: static;
 	}
-	.homeBanner:before{
+	.homeBannerSection:before{
 		top: 0px;
 		left: 0;
 		width: 170px;
 		height: 310px;
 	}
-	.homeBanner.open:before{
+	.homeBannerSection.open:before{
 
 		top: 0;
 		left: 0;
@@ -70,13 +70,13 @@
 		background: #B36A5E;
 		z-index: 3;
 	}
-	.homeBanner:after{
+	.homeBannerSection:after{
 		bottom: 0;
 		right: 0;
 		width: 80px;
 		height: 100px;
 	}
-	.homeBanner.open:after{
+	.homeBannerSection.open:after{
 		bottom: 0;
 		right: 0;
 		width: 50%;
@@ -84,7 +84,7 @@
 		background: #B36A5E;
 		z-index: 3;
 	}
-	.homeBanner__content{
+	.homeBannerSection__content{
 		flex-direction: column-reverse;
 	}
 }

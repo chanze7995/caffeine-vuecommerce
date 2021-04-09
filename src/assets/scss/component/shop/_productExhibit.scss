@@ -3,24 +3,24 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 80%;
+  width: 70%;
   outline: 1px solid;
 }
 .productExhibit__path{
   padding: 1rem;
-  outline: 1px solid;
+  // outline: 1px solid;
 }
 .productExhibit__display{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: flex-start;
-  outline: 1px solid;
+  // outline: 1px solid;
 }
 .productBox{
   position: relative;
   padding: 3rem;
-  outline: 1px solid;
+  margin: 1rem;
+  border: 1px solid #000;
 }
 .productBox__img {
   position: relative;
