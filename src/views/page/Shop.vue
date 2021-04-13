@@ -16,9 +16,7 @@
 import ProductMenu from '@/components/shop/ProductMenu.vue'
 import ProductExhibit from '@/components/shop/ProductExhibit.vue'
 import ProductLightbox from '@/components/shop/ProductLightbox.vue'
-import { ref, reactive, computed, onMounted } from 'vue'
-// import { ref, reactive, computed, onMounted, toRefs } from 'vue'
-// import { ref, computed, onMounted } from 'vue'
+import { ref, reactive, computed } from 'vue'
 import { useStore } from 'vuex'
 
 export default {
@@ -30,9 +28,7 @@ export default {
   setup () {
     // 取得全部商品資料
     const store = useStore()
-    const productInfoLoad = () => {
-      store.dispatch('getProductData')
-    }
+
     const allProductInfo = computed(() => {
       return store.getters.productInfo
     })
@@ -50,20 +46,18 @@ export default {
     })
     // let clickedProductInfo = null
     const editProductLightbox = (idx) => {
-      // console.log('1', clickedProductInfo)
+      console.log('1', clickedProductInfo)
       Object.assign(clickedProductInfo, allProductInfo.value[idx])
       // Object.assign(clickedProductInfo, { ...allProductInfo.value[idx] })
       // clickedProductInfo = { ...allProductInfo.value[idx] }
       // clickedProductInfo = allProductInfo.value[idx]
-      // console.log('2', clickedProductInfo)
+      console.log('2', clickedProductInfo)
     }
     const isProductLightboxOpen = ref(false)
     const showProductLightbox = () => {
       isProductLightboxOpen.value = !isProductLightboxOpen.value
     }
-    onMounted(() => {
-      productInfoLoad()
-    })
+
     return {
       allProductInfo,
       // ...toRefs(clickedProductInfo),

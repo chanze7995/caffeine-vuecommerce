@@ -18,6 +18,17 @@ const routes = [
     name: 'CoffeeIntroduction',
     component: () => import(/* webpackChunkName: "CoffeeIntroduction" */ '../components/explore/CoffeeDescription.vue')
   },
+  // {
+  //   path: '/exploretest',
+  //   name: 'Exploretest',
+  //   component: () => import(/* webpackChunkName: "Explore" */ '../views/page/Exploretest.vue')
+
+  // },
+  // {
+  //   path: '/exploretest/flavor',
+  //   name: 'CoffeeIntroduction',
+  //   component: () => import(/* webpackChunkName: "CoffeeIntroduction" */ '../components/explore/CoffeeDescription.vue')
+  // },
   {
     path: '/shop',
     name: 'Shop',
