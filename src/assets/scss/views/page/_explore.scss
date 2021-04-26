@@ -10,12 +10,19 @@
 }
 
 .carousel_cell img{
-  margin: 2rem;
   padding-top: 3rem;
-  width: 80%;
+  width: 350px;
   cursor: pointer;
 }
 .swiper-slide-active{
   transform: scale(1.5);
   transition: .4s
+}
+.swiper-slide-next>a{
+  pointer-events: none;
+  cursor: default;
+}
+.swiper-slide-prev>a{
+  pointer-events: none;
+  cursor: default;
 }

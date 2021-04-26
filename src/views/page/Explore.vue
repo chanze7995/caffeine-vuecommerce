@@ -4,13 +4,14 @@
           :centeredSlides="true"
           :centeredSlidesBounds="true"
           :loop="true"
+          :preventClicksPropagation="true"
           :slidesPerView="3"
           :space-between="100"
           :grabCursor="true"
           navigation
           :pagination="{ clickable: true }">
     <SwiperSlide class="carousel_cell" v-for="item in allCoffeeBeanInfo" :key="item.id">
-      <router-link :to="'/explore/flavor'">
+      <router-link :to="`/explore/${item.name}`" @click="getClickedCoffeeId(item.id)">
         <img :src="require(`@/assets/img/${item.img_name}`)" alt="">
       </router-link>
     </SwiperSlide>
@@ -19,7 +20,7 @@
 </template>
 
 <script>
-import { computed, watch, nextTick } from 'vue'
+import { computed, watch, nextTick, ref } from 'vue'
 import { useStore } from 'vuex'
 import { Swiper, SwiperSlide } from 'swiper/vue'
 import SwiperCore, { Navigation, Pagination } from 'swiper'
@@ -37,11 +38,15 @@ export default {
   setup () {
     const store = useStore()
     const allCoffeeBeanInfo = computed(() => {
-      const allProductInfo = store.getters.productInfo
-      const getCoffeeBeanData = allProductInfo.filter(item => item.mainGroupName === 'coffeeBean')
-      return getCoffeeBeanData
+      return store.getters.allCoffeeBeanInfo
     })
-
+    const clickedCoffeeBeanId = ref(0)
+    const getClickedCoffeeId = (idx) => {
+      clickedCoffeeBeanId.value = idx
+    }
+    // const setClickedCoffeeId = () => {
+    //   store.dispath('setClickedCoffeeId', clickedCoffeeBeanId)
+    // }
     const onSwiper = (swiper) => {
       watch(allCoffeeBeanInfo, () => {
         nextTick(() => {
@@ -51,6 +56,8 @@ export default {
     }
     return {
       allCoffeeBeanInfo,
+      getClickedCoffeeId,
+      // setClickedCoffeeId,
       onSwiper
     }
   }

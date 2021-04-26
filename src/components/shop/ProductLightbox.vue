@@ -11,7 +11,7 @@
       <div class="productCard__content">
         <div class="productCard__content__brand">{{clickedProductInfo.brand}}</div>
         <div class="productCard__content__name">{{clickedProductInfo.name}}</div>
-        <div class="productCard__content__description">{{clickedProductInfo.description}}</div>
+        <div class="productCard__content__description" v-html="clickedProductInfo.description"></div>
         <div class="productCard__content__price">
           <div class="productCard__content__price__original">定價：{{clickedProductInfo.price}}元</div>
           <div class="productCard__content__price__discount"></div>

@@ -12,7 +12,8 @@
 }
 .sectionBar{
   width: 300px;
-  padding: 1rem 0;
+  padding-top: 1rem;
+  margin-top: 2rem;
   border-top: solid 5px;
 }
 .coffeeDescription{
@@ -24,7 +25,7 @@
   overflow: hidden;
 }
 .coffeePhotoSection__background{
-  background-color: #FFEFB4dd;
+  background-color: var( --clickedFlavorColor );
 }
 .coffeePhotoSection__container{
   display: flex;
@@ -58,14 +59,16 @@
   font-size: 5rem;
   color: #fff;
 }
-.coffeeArticleSection__container__text {
-  padding: 1rem 0;
+.coffeeArticleSection__container__content{
+  padding: 2rem 0;
+}
+.coffeeArticleSection__container__content__text {
   line-height: 2rem;
   font-size: 1rem;
   color: #fff;
 }
-.coffeeArticleSection__container__recommendText{
-  padding: 2rem 0;
+.coffeeArticleSection__container__content__recommendText{
+  padding-top: 2rem;
   color: #fff;
 }
 .coffeeArticleSection__container__btn{
@@ -86,7 +89,7 @@
   width: 25vw;
   height: 20vw;
   margin: auto;
-  background-color: #FFEFB4dd;
+  background-color: var( --clickedFlavorColor );
   clip-path: polygon(0% calc(0% + 5vw), 100% 0%, 100% calc(100% - 5vw), 0 100%);
   z-index: -1;
 }
@@ -164,7 +167,7 @@
   width: 25vw;
   height: 20vw;
   margin: auto;
-  background-color: #FFEFB4dd;
+  background-color: var( --clickedFlavorColor );
   clip-path: polygon(0% calc(0% + 5vw), 100% 0%, 100% calc(100% - 5vw), 0 100%);
   z-index: -1;
 }

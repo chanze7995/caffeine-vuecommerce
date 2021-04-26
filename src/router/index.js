@@ -14,9 +14,9 @@ const routes = [
 
   },
   {
-    path: '/explore/flavor',
-    name: 'CoffeeIntroduction',
-    component: () => import(/* webpackChunkName: "CoffeeIntroduction" */ '../components/explore/CoffeeDescription.vue')
+    path: '/explore/:flavor',
+    name: 'CoffeeBeanIntroduction',
+    component: () => import(/* webpackChunkName: "CoffeeIntroduction" */ '../components/explore/CoffeeBeanIntroduction.vue')
   },
   // {
   //   path: '/exploretest',

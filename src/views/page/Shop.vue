@@ -28,9 +28,8 @@ export default {
   setup () {
     // 取得全部商品資料
     const store = useStore()
-
     const allProductInfo = computed(() => {
-      return store.getters.productInfo
+      return store.getters.allProductInfo
     })
     // 點選的商品資料
     const clickedProductInfo = reactive({
