@@ -55,20 +55,22 @@
       </div>
       <div class="coffeeReviewSection__title2">告訴我們你覺得它像的味道<br>@caffeinewithmike</div>
     </section>
-    <section class="coffeeMoreInfoSection sectionSize">
-      <!-- <div class="sectionBackground"></div> -->
+    <section class="coffeePurchaseSection sectionSize">
+      <ProductCard/>
     </section>
   </div>
 </template>
 
 <script>
 import Button from '@/components/Button.vue'
+import ProductCard from '@/components/explore/ProductCard.vue'
 import { computed, reactive, ref } from 'vue'
 import { useRoute } from 'vue-router'
 import { useStore } from 'vuex'
 export default {
   components: {
-    Button
+    Button,
+    ProductCard
   },
   setup (props) {
     const route = useRoute()

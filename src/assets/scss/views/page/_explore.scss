@@ -2,16 +2,24 @@
   background: #d7d7d7;
   height: 80vh;
 }
-
-.carousel_cell {
+// .carousel_cell {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+// }
+.swiper-slide {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-.carousel_cell img{
+// .carousel_cell img{
+//   padding-top: 3rem;
+//   width: 350px;
+//   cursor: pointer;
+// }
+.swiper-slide img{
   padding-top: 3rem;
-  width: 350px;
+  width: 280px;
   cursor: pointer;
 }
 .swiper-slide-active{

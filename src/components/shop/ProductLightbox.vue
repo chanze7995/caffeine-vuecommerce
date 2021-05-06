@@ -5,7 +5,7 @@
       <div @click="showProductLightbox()">
         <Icon icon-name="close" icon-class="productCard__closeIcon"/>
       </div>
-      <div class="productCard__img">
+      <!-- <div class="productCard__img">
         <img :src="require(`@/assets/img/${clickedProductInfo.img_name}`)" alt="" class="productCard__productImg">
       </div>
       <div class="productCard__content">
@@ -16,25 +16,29 @@
           <div class="productCard__content__price__original">定價：{{clickedProductInfo.price}}元</div>
           <div class="productCard__content__price__discount"></div>
         </div>
-      <div class="productCard__quantity">
-        <div class="productCard__quantity__icon"></div>
-        <div class="productCard__quantity__value"></div>
-        <div class="productCard__quantity__icon"></div>
-      </div>
-      <Button :btnMsg="addCartBtnMsg" class="productCard__addBtn"/>
-      </div>
+        <div class="productCard__quantity">
+          <div class="productCard__quantity__icon"></div>
+          <div class="productCard__quantity__value"></div>
+          <div class="productCard__quantity__icon"></div>
+        </div>
+        <Button :btnMsg="addCartBtnMsg" class="productCard__addBtn"/>
+      </div> -->
+      <ProductCard/>
     </div>
   </div>
 </template>
 
 <script>
 import Icon from '@/components/svgSprites/Icon.vue'
-import Button from '@/components/Button.vue'
+// import Button from '@/components/Button.vue'
+// import ProductCard from '@/components/explore/ProductCard.vue'
 import { ref } from 'vue'
+import ProductCard from '../explore/ProductCard.vue'
 export default {
   components: {
     Icon,
-    Button
+    // Button
+    ProductCard
   },
   props: {
     clickedProductInfo: {
@@ -60,6 +64,6 @@ export default {
 }
 </script>
 
-<style>
-
+<style scoped lang="scss">
+@import '@/assets/scss/component/shop/_productLightbox.scss';
 </style>

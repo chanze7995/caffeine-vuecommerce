@@ -10,7 +10,7 @@
           :grabCursor="true"
           navigation
           :pagination="{ clickable: true }">
-    <SwiperSlide class="carousel_cell" v-for="item in allCoffeeBeanInfo" :key="item.id">
+    <SwiperSlide v-for="item in allCoffeeBeanInfo" :key="item.id">
       <router-link :to="`/explore/${item.name}`" @click="getClickedCoffeeId(item.id)">
         <img :src="require(`@/assets/img/${item.img_name}`)" alt="">
       </router-link>
@@ -63,3 +63,7 @@ export default {
   }
 }
 </script>
+
+<style scoped lang="scss">
+@import '@/assets/scss/views/page/_explore.scss';
+</style>

@@ -68,6 +68,6 @@ export default {
 }
 </script>
 
-<style>
-
+<style scoped lang="scss">
+@import '@/assets/scss/views/page/_location.scss';
 </style>

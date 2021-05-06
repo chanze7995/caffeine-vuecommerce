@@ -16,6 +16,7 @@
 import ProductMenu from '@/components/shop/ProductMenu.vue'
 import ProductExhibit from '@/components/shop/ProductExhibit.vue'
 import ProductLightbox from '@/components/shop/ProductLightbox.vue'
+// import ProductLightbox from '@/components/explore/ProductCard.vue'
 import { ref, reactive, computed } from 'vue'
 import { useStore } from 'vuex'
 
@@ -68,3 +69,6 @@ export default {
   }
 }
 </script>
+<style scoped lang="scss">
+@import '@/assets/scss/views/page/_shop.scss';
+</style>
