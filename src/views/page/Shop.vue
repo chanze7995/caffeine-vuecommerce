@@ -1,6 +1,6 @@
 <template>
   <div class="shopContainer">
-    <ProductMenu/>
+    <ProductMenu />
     <ProductExhibit :allProductInfo="allProductInfo"
                     @clicked-product-id="editProductLightbox"
                     :showProductLightbox="showProductLightbox"/>

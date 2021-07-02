@@ -73,9 +73,10 @@ export default {
     ProductCard
   },
   setup (props) {
+    // 取得所點擊的風味
     const route = useRoute()
     const clickedFlavor = route.params.flavor
-
+    // 取得咖啡豆資料
     const store = useStore()
     const allCoffeeBeanInfo = computed(() => {
       return store.getters.allCoffeeBeanInfo

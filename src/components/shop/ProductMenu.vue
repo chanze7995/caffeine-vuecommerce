@@ -2,7 +2,7 @@
   <div class="productMenu">
     <ul class="mainMenuContainer">
       <li>
-        <router-link :to="{name:'Shop'}" @click="pathChangeClick('all')">全部商品</router-link>
+        <router-link :to="`/shop`" @click="pathChangeClick('all')">全部商品</router-link>
       </li>
       <li>
         <router-link :to="{name:'Shop'}" @click="pathChangeClick('bean')">咖啡豆</router-link>
@@ -47,6 +47,13 @@
 
 <script>
 export default {
-
+  setup () {
+    const pathChangeClick = (i) => {
+      console.log(i)
+    }
+    return {
+      pathChangeClick
+    }
+  }
 }
 </script>

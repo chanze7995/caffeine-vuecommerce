@@ -2,6 +2,7 @@
   <div id="app">
     <Header />
     <router-view/>
+    <Cart />
     <Footer />
   </div>
 </template>
@@ -11,12 +12,14 @@ import Footer from '@/components/Footer.vue'
 // import { ref } from 'vue'
 import { onMounted, ref } from 'vue'
 import { useStore } from 'vuex'
+import Cart from './components/Cart.vue'
 
 export default {
   name: 'App',
   components: {
     Header,
-    Footer
+    Footer,
+    Cart
   },
   setup () {
     const store = useStore()

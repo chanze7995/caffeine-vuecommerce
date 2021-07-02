@@ -35,9 +35,22 @@ const routes = [
     component: () => import(/* webpackChunkName: "Shop" */ '../views/page/Shop.vue')
     // children: [
     //   {
-
-    //   },
+    //     path: 'allProduct',
+    //     name: 'allProduct',
+    //     component: () =>
+    //       import(/* webpackChunkName: "Shop" */ '../views/page/Shop.vue')
+    //   }
     // ]
+  },
+  {
+    path: '/shop/:group',
+    name: 'groupList',
+    component: () => import(/* webpackChunkName: "Shop" */ '../views/page/Shop.vue')
+  },
+  {
+    path: '/shop/:group/:id',
+    name: 'groupList',
+    component: () => import(/* webpackChunkName: "Shop" */ '../views/page/Shop.vue')
   },
   {
     path: '/locations',
